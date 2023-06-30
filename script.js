@@ -15,7 +15,8 @@ const delayFunction = (userText, userDelay) => {
 
 async function display(userText, userDelay){
   const toDisplay = await delayFunction(userText, userDelay);
-  console.log(toDisplay);
+  const div = document.getElementById("output");
+  div.innerText = toDisplay;
 }
 
 
